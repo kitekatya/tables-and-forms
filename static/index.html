@@ -9,7 +9,50 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <!--Форму размещай тут-->
+    <form action="/pets/orders" method="POST"> </form>
+    
+    <label>
+        Животные
+        <label>
+            <input type="radio" name="type" value="dog"> Собака
+        </label>
+        <label>
+            <input type="radio" name="type" value="Cat"> Кошка
+        </label>
+        <label>
+            <input type="radio" name="type" value="Bear"> Медведь
+        </label>
+    </label>
+    <br>
+
+    <label>
+        Пол
+        <label>
+            <input type="radio" name="gender" value="Woman"> Ж
+        </label>
+        <label>
+            <input type="radio" name="gender" value="Man"> М
+        </label>
+    </label>
+    <br>
+
+    <label>
+        Цвет глаз
+        <input type="color" name="color" value="#ffcc00">
+    </label>
+    <br>
+
+    <label>
+        Длина хвоста
+        <input type="number" name="quantity" min="1" max="5" value="1">
+    </label>
+    <br>
+
+    <label>
+
+    </label>
+    
+
 
 </main>
 </body>
