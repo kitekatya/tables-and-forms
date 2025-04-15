@@ -9,25 +9,22 @@
 <main>
     <h1>Найди себе друга!</h1>
 
-    <form action="/pets/orders" method="POST"> </form>
-    
+    <form action="/pets/orders" method="POST">
+
     <label>
-        Животные<br>
-        <label>
-            <input type="radio" name="type" value="dog"> Собака
-        </label>
-        <label>
-            <input type="radio" name="type" value="Cat"> Кошка
-        </label>
-        <label>
-            <input type="radio" name="type" value="Bear"> Медведь
+        Животное
+        <select name="animal" required>
+            <option value="dog" selected>Собака</option>
+            <option value="cat">Кошечка</option>
+            <option value="bear">Медведь</option>
+        </select>
         </label>
         <br>
     </label>
     <br>
 
     <label>
-        Пол<br>
+        Пол
         <label>
             <input type="radio" name="gender" value="Woman"> Ж
         </label>
@@ -75,7 +72,7 @@
 
     <label>
         Телефонный номер
-        <input type="tel" id="phone" name="phone_number" 
+        <input type="tel" id="phone" name="phone_number"
             placeholder="+7 (999) 999 99-99" pattern="^\+7\s?\(?\d{3}\)?\s?\d{3}-?\d{2}-?\d{2}$" required />
         <br>
     </label>
@@ -83,11 +80,14 @@
 
     <label>
         Правила
-        <input type="checkbox" name="rules" >
+        <input type="checkbox" name="rules" required>
             <span>Я согласен с условиями и готов продать душу дьяволу</span>
     </label>
     <br>
-    <input type="submit" name="submit" value="Отправить">
+
+    <input type="submit" name="submit" value="Отправить"><br><br>
+    <input type="reset" value="Сбросить">
+    </form>
 </main>
 </body>
 </html>
